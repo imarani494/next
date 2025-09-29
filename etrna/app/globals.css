@@ -1,88 +1,14 @@
+/* src/app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-/* Dark mode scrollbar */
-.dark ::-webkit-scrollbar-track {
-  background: #1e293b;
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  background: #475569;
-}
-
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
-}
-
-/* Smooth transitions */
-* {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Price change animations */
-@keyframes priceUp {
-  0% {
-    background-color: transparent;
-  }
-  50% {
-    background-color: rgba(34, 197, 94, 0.1);
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
-@keyframes priceDown {
-  0% {
-    background-color: transparent;
-  }
-  50% {
-    background-color: rgba(239, 68, 68, 0.1);
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
-.price-up {
-  animation: priceUp 0.5s ease-in-out;
-}
-
-.price-down {
-  animation: priceDown 0.5s ease-in-out;
-}
-
-/* Glass morphism effect */
-.glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Simple test styles */
+.test-red {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
